@@ -34,7 +34,97 @@
     --level-notification: 1000;
 }
 
-body{
-    background-color: var(--color-main-background);
+body {
+    background: #ecfbff;
+    background: var(--color-main-background);
+    height: 100%;
+    font-family: Open Sans, Arial, sans-serif;
+    font-family: var(--font-family);
+    font-size: 14px;
+    color: #212c5b;
+    position: relative;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
 }
 
+.chocofamily-logos {
+    font-family: Open Sans, Arial, sans-serif;
+    background: #fff;
+    height: 42px;
+    border-bottom: 3px solid #d4f2ff;
+    font-size: 14px;
+    box-sizing: content-box;
+  }
+
+  .choco-projects {
+    height: inherit;
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .choco-projects__list {
+    list-style: none;
+    display: flex;
+    height: inherit;
+  }
+
+  .choco-projects__item {
+    width: 109px;
+    text-align: center;
+    border-right: 1px solid #ccc;
+    position: relative;
+  }
+
+  .choco-projects__title {
+    font-size: 10.5px;
+    color: #1463aa;
+    color: var(--color-primary-dark);
+  }
+
+  .choco-projects__item--picked {
+    border-bottom: 3px solid #387fbf;
+    border-bottom: 3px solid var(--color-primary);
+    border-left: none;
+    border-right: none;
+  }
+
+  .choco-projects__logo {
+    height: 22px;
+    background-repeat: no-repeat;
+    background-position: center 1px;
+    transition: 0.3s ease-in-out;
+    transition: var(--base-transition);
+  }
+
+  .choco-projects .login {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    color: #bfbfbf;
+    font-family: Open Sans, Arial, sans-serif;
+  }
+
+  .text-xs {
+    font-size: 0.75rem;
+  }
+
+  .font-semibold {
+    font-weight: 600;
+  }
+
+  .flex {
+    display: flex;
+  }
+
+  .items-center {
+    align-items: center;
+  }
+
+  a{
+    text-decoration: none;
+  }
