@@ -1,0 +1,660 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Аренда автомобилей по всему миру онлайн</title>
+        <link rel="stylesheet" href="../../assets/root.css">
+        <link rel="stylesheet" href="./styles.css">
+
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0,
+            minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    </head>
+    <body>
+
+        <div class="chocofamily-logos">
+            <div id="choco-projects" class="choco-projects">
+                <ul class="choco-projects__list">
+                    <li class="choco-projects__item
+                        choco-projects__item--chocolife">
+                        <a
+                            class="choco-projects__link"
+                            target="_blank">
+                            <span class="choco-projects__title">Скидки до 90%</span>
+                            <div class="choco-projects__logo"></div>
+                        </a>
+                    </li>
+                    <li class="choco-projects__item
+                        choco-projects__item--tripfor">
+                        <span class="choco-projects__title">Авиабилеты</span>
+                        <div class="choco-projects__logo"></div>
+                    </li>
+                    <li class="choco-projects__item
+                        choco-projects__item--lensmark">
+                        <a
+                            class="choco-projects__link"
+                            rel="nofollow"
+                            target="_blank">
+                            <span class="choco-projects__title">Оптика</span>
+                            <div class="choco-projects__logo"></div>
+                        </a>
+                    </li>
+                    <li class="choco-projects__item
+                        choco-projects__item--chocofood">
+                        <a
+                            class="choco-projects__link"
+                            rel="nofollow"
+                            target="_blank">
+                            <span class="choco-projects__title">Заказ Еды</span>
+                            <div class="choco-projects__logo"></div>
+                        </a>
+                    </li>
+                    <li class="choco-projects__item
+                        choco-projects__item--idoctor">
+                        <a
+                            class="choco-projects__link"
+                            rel="nofollow"
+                            target="_blank">
+                            <span class="choco-projects__title">Поиск врачей</span>
+                            <div class="choco-projects__logo"></div>
+                        </a>
+                    </li>
+                </ul>
+                <div class="login">
+                    <input id="is-authorized-input" type="hidden" value="">
+                    <div class="text-xs font-semibold">
+                        <div
+                            id="auth-links"
+                            class="flex items-center ">
+                            <a
+                                class="mr-4 text-blue-400 underline">
+                                Бизнес аккаунт </a>
+                            <button
+                                id="login-button"
+                                type="button"
+                                class="
+                                py-1 px-4
+                                bg-blue-500 border-solid border border-white
+                                lg:border-none rounded-lg
+                                text-white leading-normal
+                                cursor-pointer
+                                ">
+                                Войти </button>
+                        </div>
+                        <div
+                            id="post-auth-links"
+                            class="relative flex items-center hidden">
+                            <a
+                                id="cab_link"
+                                title=""
+                                class="mr-4 text-blue-400 underline">
+                                Личный кабинет </a>
+                            <a
+                                class="
+                                py-1 px-4
+                                bg-blue-500 border-solid border border-white
+                                lg:border-none rounded-lg
+                                text-white leading-normal
+                                cursor-pointer
+                                no-underline
+                                "
+                                style="font-size: 12px; font-weight: 600;">
+                                Выход </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="lang-switcher">
+                    <div class="lang-switcher__item lang-switcher__item--active
+                        lang-switcher__item--ru">
+                        Рус <img class="lang-switcher__arrow" />
+                    </div>
+                    <div class="lang-switcher__items">
+                        <div
+                            class="
+                            lang-switcher__item
+                            lang-switcher__item--mobile
+                            lang-switcher__item--active
+                            lang-switcher__item--inner
+                            lang-switcher__item--ru"
+                            data-lang="ru">
+                            Рус </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="center">
+                <div class="header hidden lg:flex">
+                    <div class="header__logo">
+                        <a>
+                            <img
+                                width="273" height="51">
+                        </a>
+                    </div>
+                    <div class="menu__main">
+                        <a
+                            class="avia js-link-event ">
+                            <img>
+                            <span>Авиабилеты</span>
+                        </a>
+                        <a
+                            class="railways js-link-event selected">
+                            <img>
+                            <span>ЖД билеты</span>
+                        </a>
+                        <a
+                            class="hotel js-link-event">
+                            <img>
+                            <span>Гостиницы</span>
+                        </a>
+                        <a
+                            class="rentalcars js-link-event ">
+                            <img>
+                            <span>Авто</span>
+                        </a>
+                        <a
+                            class="visas js-link-event ">
+                            <img>
+                            <span>Визы</span>
+                        </a>
+                        <a
+                            class="b2b js-link-event ">
+                            <div class="b2b-icon-wrapper">
+                                <img>
+                            </div>
+                            <span>Корпоративным клиентам</span>
+                        </a>
+                        <a
+                            class="tours js-link-event ">
+                            <div class="tours-icon-wrapper">
+                                <img>
+                            </div>
+                            <span>Туры</span>
+                        </a>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="content">
+                    <div class="content-center">
+                        <div class="rental-cars">
+                            <div class="rental-cars__block
+                                rental-cars__block_top" id="forms">
+                                <div class="rental-cars__block__content">
+                                    <div class="rental-cars__block">
+                                        <div class="rental-cars__block">
+                                            <div class="rental-cars__forms">
+                                                <div
+                                                    class="rental-cars__forms__tabs">
+                                                    <div
+                                                        class="rental-cars__forms__tabs__tab
+                                                        rental-cars__forms__tabs__tab_active">
+                                                        Предварительный
+                                                        расчет и
+                                                        бронирование
+                                                    </div>
+                                                    <div
+                                                        class="rental-cars__forms__tabs__tab">
+                                                        Изменить или
+                                                        отменить
+                                                        бронирование
+                                                    </div>
+                                                </div>
+
+                                                <div
+                                                    class="rental-cars__forms__content">
+                                                    <iframe tab="1"
+                                                        class="rental-cars__forms__content__tab
+                                                        rental-cars__forms__content__tab_active"
+                                                        src="https://eixnbeweb01.rent-at-avis.com/avisonline/ru/IBE.nsf/ReservationStep1?OpenForm&MST=38CB55A0B8DEA242C12582BA005A5379"
+                                                        width="100%"
+                                                        height="600"
+                                                        align="middle"
+                                                        frameborder="0">
+                                                    </iframe>
+                                                    <iframe tab="2"
+                                                        class="rental-cars__forms__content__tab"
+                                                        src="https://eixnbeweb01.rent-at-avis.com/avisonline/ru/IBE.nsf/modifycancel?OpenForm&MST=38CB55A0B8DEA242C12582BA005A5379"
+                                                        width="100%"
+                                                        height="600"
+                                                        align="middle"
+                                                        frameborder="0">
+                                                    </iframe>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="rental-cars__block">
+                                            <div>
+                                                <div
+                                                    class="rental-cars__header"
+                                                    style="color: white;
+                                                    text-align: right">
+                                                    <img><br>
+                                                    Аренда автомобилей по
+                                                    всему миру онлайн
+                                                </div>
+                                                <img
+                                                    class="block
+                                                    rental-cars__block_top__img">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rental-cars__block">
+                                <div class="rental-cars__block__content">
+                                    <div class="rental-cars__header">
+                                        Попробуйте свободу на вкус, арендуя
+                                        автомобиль в Avis
+                                    </div>
+                                    <div class="rental-cars__block
+                                        rental-cars__block_feature">
+                                        <img
+                                            style="margin-right: 76px">
+                                        <div>
+                                            <b>Свобода передвижения.</b><br>
+                                            Вы составляете собственный
+                                            маршрут, не обращая внимание на
+                                            расписание общественного
+                                            транспорта.
+                                        </div>
+                                    </div>
+                                    <div class="rental-cars__block
+                                        rental-cars__block_feature">
+                                        <img
+                                            style="margin-right: 76px">
+                                        <div style="white-space: pre-line">
+                                            <b>Свобода выбора.</b><br>
+                                            Вы можете выбрать:
+                                            · автомобиль, который больше
+                                            всего подходит под все Ваши
+                                            требования;
+                                            · станцию проката наиболее
+                                            удобную для Вас;
+                                            · дополнительные услуги и
+                                            страховки, которые сделают Ваше
+                                            путешествие еще более
+                                            комфортным;
+                                            · самое оптимальное для Вас
+                                            время получения и возврата авто
+                                        </div>
+                                    </div>
+                                    <div class="rental-cars__block
+                                        rental-cars__block_feature">
+                                        <img
+                                            style="margin-right: 76px">
+                                        <div>
+                                            <b>Свободные руки.</b><br>
+                                            Ведь все вещи Вы можете положить
+                                            в багажник авто и забыть о
+                                            тяжестях и усталости.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="background: #687482; color: white">
+                                <div class="rental-cars__block
+                                    rental-cars__block_comfort"
+                                    style="width: calc(50vw + 500px);
+                                    justify-content: space-between;">
+                                    <img
+                                        style="margin-right: 70px;
+                                        object-fit: cover; object-position:
+                                        100% 0">
+                                    <div style="padding: 52px 0; max-width:
+                                        1000px;">
+                                        <div class="rental-cars__header_2">
+                                            Путешествуйте с комфортом
+                                        </div>
+                                        <p>
+                                            Автомат или механика, небольшой
+                                            автомобиль или микроавтобус, Вы
+                                            сможете подобрать автомобиль под
+                                            любые цели.
+                                        </p>
+                                        <p>
+                                            А для того, чтобы сделать Ваше
+                                            путешествие еще более комфортным
+                                            и безопасным мы предлагаем ряд
+                                            дополнительных опций, таких как
+                                            навигатор и детское кресло.
+                                        </p>
+                                        <p>
+                                            Вы можете заказать эти опции
+                                            заранее при бронировании или во
+                                            время получения авто на станции
+                                            проката, при условии их наличия.
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="rental-cars__block__content">
+                                <div class="rental-cars__block
+                                    rental-cars__block_extra">
+                                    <div>
+                                        <div class="rental-cars__header"
+                                            style="text-align:left">
+                                            Дополнительные услуги
+                                        </div>
+                                        <p>
+                                            Также мы предлагаем
+                                            дополнительные услуги, такие как
+                                            расширенное страхование и
+                                            доставка автомобиля к отелю. В
+                                            стоимость аренды в большинстве
+                                            стран аренды уже будет включена
+                                            стандартная страховка от ущерба
+                                            и угона с франшизой.
+                                        </p>
+                                        <p>
+                                            Франшиза (максимальная
+                                            финансовая ответственность
+                                            водителя при наступлении
+                                            страхового случая) может
+                                            отличаться в зависимости от
+                                            страны и выбранной группы авто.
+                                            Если Вы хотите воспользоваться
+                                            полным страхованием или
+                                            приобрести дополнительные
+                                            страховки, просим Вас сообщать
+                                            об этом нашим сотрудникам на
+                                            станции проката.
+                                        </p>
+                                        <p>
+                                            После бронирования просим Вас
+                                            ознакомиться с информацией по
+                                            Вашей аренде в подтверждении
+                                            бронирования, все ли верно там
+                                            указано.
+                                        </p>
+                                    </div>
+                                    <img>
+                                </div>
+                            </div>
+
+                            <div style="background: #687482; color: white">
+                                <div class="rental-cars__block__content">
+                                    <div class="rental-cars__header"
+                                        style="color: white; margin-bottom:
+                                        64px">
+                                        Обращаем ваше внимание
+                                        <div style="font-size: 20px">
+                                            Документы, которые водителю
+                                            необходимо иметь при себе на
+                                            станции проката:
+                                        </div>
+                                    </div>
+                                    <div class="rental-cars__block"
+                                        style="flex-wrap: wrap;
+                                        justify-content: center">
+                                        <div class="rental-cars__doc">
+                                            <img>
+                                            Действующий заграничный паспорт
+                                        </div>
+                                        <div class="rental-cars__doc">
+                                            <img>
+                                            Кредитную карту на имя водителя
+                                        </div>
+                                        <div class="rental-cars__doc">
+                                            <img>
+                                            Подтверждение бронирования
+                                        </div>
+
+                                        <div class="rental-cars__doc">
+                                            <img>
+                                            Действующие национальное и
+                                            международное водительские
+                                            удостоверения
+                                        </div>
+                                        <div class="rental-cars__doc">
+                                            <img>
+                                            Ваучер<br>
+                                            <small>(если оплата была
+                                                произведена в Казахстане)</small>
+                                        </div>
+                                        <div class="rental-cars__doc">
+                                            <img>
+                                            Подтверждение скидки<br>
+                                            <small>(если Вы воспользовались
+                                                скидочным кодом, предъявите
+                                                купон при получении авто)</small>
+                                        </div>
+                                    </div>
+                                    <button class="rental-cars__button">
+                                        Забронировать авто
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+        <footer>
+            <div class="footer">
+                <div class="footer__row">
+                    <div class="footer__col">
+                        <ul>
+                            <li class="header_footer_list">Популярные
+                                направления</li>
+                            <li><a>Алматы
+                                    — Астана</a></li>
+                            <li><a>Алматы
+                                    — Дубай</a></li>
+                            <li><a>Алматы
+                                    — Стамбул</a></li>
+                            <li><a>Алматы
+                                    — Бангкок</a></li>
+                            <li><a>Алматы
+                                    — Москва</a></li>
+                            <li><a>Популярные направления</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__col">
+                        <ul>
+                            <li class="header_footer_list">Авиакомпании</li>
+                            <li><a>Air Astana</a></li>
+                            <li><a>Qazaq Air</a>
+                            </li>
+                            <li><a>Aeroflot</a>
+                            </li>
+                            <li><a>SCAT</a></li>
+                            <li><a>Все авиакомпании</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__col">
+                        <ul>
+                            <li class="header_footer_list">Популярные страны</li>
+                            <li><a>Авиабилеты
+                                    в Россию</a></li>
+                            <li><a>Авиабилеты
+                                    в Таиланд</a></li>
+                            <li><a>Авиабилеты
+                                    в Турцию</a></li>
+                            <li><a>Авиабилеты
+                                    в Германию</a></li>
+                            <li><a>Авиабилеты
+                                    в Грузию</a></li>
+                            <li><a>Все страны</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__col">
+                        <ul>
+                            <li class="header_footer_list">Продукты</li>
+                            <li><a>Авиабилеты</a></li>
+                            <li><a>ЖД
+                                    билеты</a></li>
+                            <li><a>Визовая
+                                    поддержка</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__row">
+                    <div class="footer__col">
+                        <ul>
+                            <li class="header_footer_list">О нас</li>
+                            <li><a>О компании</a></li>
+                            <li><a>Блог</a></li>
+                            <li><a>Способы оплаты</a></li>
+                            <li><a>Контакты</a></li>
+                            <li><a>Публичная оферта</a></li>
+                            <li><a>Публичная
+                                    оферта ЖД</a></li>
+                            <li><a>СМИ о нас</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__col">
+                        <ul>
+                            <li class="header_footer_list">Пользователям</li>
+                            <li><a>Вопросы-ответы</a></li>
+                            <li><a>Отзывы</a></li>
+                            <li><a>Лучшие цены</a></li>
+                            <li><a>Регистрация
+                                    на рейс</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__col">
+                        <ul>
+                            <li class="header_footer_list">Полезная
+                                информация</li>
+                            <li><a>Авиакомпании</a></li>
+                            <li><a>Аэропорты</a></li>
+                            <li><a>Страны</a></li>
+                            <li><a>Города</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__col">
+                        <ul>
+                            <li class="header_footer_list">Партнерам</li>
+                            <li><a>Корпоративным клиентам</a></li>
+                            <li><a>Рекламодателям</a></li>
+                            <li><a>Сотрудничество</a></li>
+                            <li><a>Стать
+                                    агентом</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__row">
+                    <div class="footer__col --icons">
+                        <ul>
+                            <li class="footer_img">
+                                <div class="footer-icons">
+                                    <div class="footer-icons__item
+                                        footer-icons__item--visa"></div>
+                                    <div class="footer-icons__item
+                                        footer-icons__item--master"></div>
+                                    <div class="footer-icons__item
+                                        footer-icons__item--union-pay"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__col --icons">
+                        <ul>
+                            <li class="footer_img">
+                                <div class="footer-icons">
+                                    <a
+                                        class="footer-icons__item
+                                        footer-icons__item--astana_hub"></a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__col --icons">
+                        <ul>
+                            <li class="footer_img">
+                                <a
+                                    class="social social--inst"></a>
+                                <a
+                                    class="social social--fb"></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__col --icons">
+                        <ul>
+                            <li class="footer_img">
+                                <div class="footer-icons">
+                                    <div class="footer-icons__item
+                                        footer-icons__item--depositphotos"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="mobile-footer">
+                <ul class="footer-mobile-menu">
+                    <li class="footer-mobile-menu__item">
+                        <a
+                            class="footer-mobile-menu__item-link">
+                            <img
+                                class="footer-mobile-menu__item-icon">
+                            Вопросы и ответы </li>
+                        <li class="footer-mobile-menu__item">
+                            <a
+                                class="footer-mobile-menu__item-link">
+                                <img
+                                    class="footer-mobile-menu__item-icon">
+                                Публичная оферта </a>
+                        </li>
+                        <li class="footer-mobile-menu__item">
+                            <a
+                                class="footer-mobile-menu__item-link">
+                                <img
+                                    class="footer-mobile-menu__item-icon">
+                                Публичная оферта ЖД </a>
+                        </li>
+                        <li class="footer-mobile-menu__item">
+                            <a
+                                class="footer-mobile-menu__item-link"> <img
+                                    class="footer-mobile-menu__item-icon">
+                                Информация </li>
+                            <li class="footer-mobile-menu__item">
+                                <a
+                                    class="footer-mobile-menu__item-link">
+                                    <img
+                                        class="footer-mobile-menu__item-icon">
+                                    Карта сайта </a>
+                            </li>
+                            <li class="footer-mobile-menu__item">
+                                <a
+                                    class="footer-mobile-menu__item-link">
+                                    <img
+                                        class="footer-mobile-menu__item-icon">
+                                    Отзывы </a>
+                            </li>
+                            <li class="footer-mobile-menu__item">
+                                <a
+                                    class="footer-mobile-menu__item-link">
+                                    <img
+                                        class="footer-mobile-menu__item-icon">
+                                    СМИ о нас </a>
+                            </li>
+                            <li class="footer-mobile-menu__item">
+                                <a
+                                    class="footer-mobile-menu__item-link">
+                                    <img
+                                        class="footer-mobile-menu__item-icon">
+                                    Способы оплаты </a>
+                            </li>
+                            <li class="footer-mobile-menu__item">
+                                <a
+                                    class="footer-mobile-menu__item-link">
+                                    <img
+                                        class="footer-mobile-menu__item-icon">
+                                    Контакты </a>
+                            </li>
+                        </ul>
+                    </div>
+                </footer>
+
+            </body>
+        </html>
