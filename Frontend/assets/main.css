@@ -707,3 +707,49 @@ h3 {
   margin-bottom: 10px;
   color: #fff;
 }
+
+.flight__container {
+  padding: 10px;
+  background-color: white;
+  color: black;
+}
+
+.crumbs {
+  display: flex;
+  font-size: 12px;
+}
+
+.seo-flights-row,
+.seo-flights__list {
+  display: flex;
+  flex-flow: wrap;
+}
+.seo-flights-row__item-almaty {
+  width: 30%;
+}
+.seo-flights__heading {
+  margin: 5px 0;
+}
+.seo-flights-row,
+.seo-flights__list {
+  display: flex;
+  flex-flow: wrap;
+}
+.seo-flights-row__item-almaty .seo-flights__list-item {
+  width: 100%;
+}
+.seo-flights__list-link {
+  text-decoration: none;
+  color: skyblue;
+}
+.seo-flights-row__item-others {
+  width: 70%;
+}
+.seo-flights-row,
+.seo-flights__list {
+  display: flex;
+  flex-flow: wrap;
+}
+.seo-flights-row__item-others .seo-flights__list-item {
+  width: 50%;
+}
