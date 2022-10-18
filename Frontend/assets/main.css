@@ -36,6 +36,7 @@
 
 body {
   background-color: var(--color-main-background);
+  font-family: Open Sans, Arial, sans-serif;
 }
 
 .footer {
@@ -43,5 +44,341 @@ body {
   position: relative;
 }
 
-@media screen and (max-width: 1000px) {
+.chocofamily-logos {
+  font-family: Open Sans, Arial, sans-serif;
+  background: #fff;
+  height: 42px;
+  border-bottom: 3px solid #d4f2ff;
+  font-size: 14px;
+  box-sizing: content-box;
+}
+#choco-projects {
+  height: inherit;
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.choco-projects__list {
+  list-style: none;
+  display: flex;
+  height: inherit;
+}
+
+.choco-projects__item {
+  width: 109px;
+  text-align: center;
+  border-right: 1px solid #ccc;
+  position: relative;
+}
+
+.choco-projects__link {
+  display: block;
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+}
+
+.choco-projects__title {
+  font-size: 10.5px;
+  color: #1463aa;
+  color: var(--color-primary-dark);
+}
+.choco-projects__logo {
+  height: 22px;
+  background-repeat: no-repeat;
+  background-position: center 1px;
+  transition: 0.3s ease-in-out;
+  transition: var(--base-transition);
+}
+
+.choco-projects__item:not(.choco-projects__item--tripfor)
+  .choco-projects__logo {
+  opacity: 0.5;
+  filter: grayscale(70%);
+}
+.choco-projects__item:hover .choco-projects__logo {
+  opacity: 1;
+  filter: none;
+}
+.choco-projects__item--chocolife .choco-projects__logo {
+  background-image: url(https://www.chocotravel.com/media/v3/media/images/chocoprojects/chocolife.svg);
+  background-size: 73px;
+  background-position-y: 3px;
+}
+.choco-projects__item--tripfor .choco-projects__logo {
+  background-image: url(https://www.chocotravel.com/media/v3/media/images/chocoprojects/chocotravel.svg);
+  background-size: 89px;
+}
+.choco-projects__item--lensmark .choco-projects__logo {
+  background-image: url(https://www.chocotravel.com/media/v3/media/images/chocoprojects/lensmark.svg);
+  background-size: 69px;
+}
+.choco-projects__item--chocofood .choco-projects__logo {
+  background-image: url(https://www.chocotravel.com/media/v3/media/images/chocoprojects/chocofood.svg);
+  background-size: 89px;
+}
+.choco-projects__item--idoctor .choco-projects__logo {
+  background-image: url(https://www.chocotravel.com/media/v3/media/images/chocoprojects/idoctor.svg);
+  background-size: 59px;
+  background-position-y: 3px;
+}
+#choco-projects .login {
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  color: #bfbfbf;
+  font-family: Open Sans, Arial, sans-serif;
+}
+#choco-projects .login__link {
+  text-decoration: underline;
+  padding-right: 5px;
+  padding-left: 5px;
+  color: #212c5b;
+}
+#choco-projects .login__button {
+  text-decoration: none;
+  color: #fff;
+  margin-left: 10px;
+  padding: 5px 13px;
+  border-radius: 3px;
+  background-color: #5590c6;
+}
+.login__container {
+  font-weight: 600;
+
+  font-size: 0.75rem;
+}
+.login__inner__container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.log-out__button {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px;
+  padding-inline: 16px;
+  background-color: rgb(0, 123, 255);
+  border: 1px solid white;
+  border-radius: 8px;
+  color: white;
+  line-height: 1.5;
+  cursor: pointer;
+}
+.lang-switcher {
+  width: 80px;
+  position: absolute;
+  right: -100px;
+  top: 10px;
+  z-index: 1111;
+  outline: none;
+}
+.center {
+  width: 1000px;
+  margin: 0 auto;
+}
+.header {
+  padding: 18px 0;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__logo {
+  width: 240px;
+}
+.header__logo img {
+  width: 100%;
+  height: auto;
+}
+.menu__main {
+  width: 800px;
+  margin-left: 20px;
+  margin-top: 5px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.menu__main a.selected {
+  color: #fe9922;
+  border-bottom: 2px solid #fe9922;
+}
+a {
+  color: #212c5b;
+}
+a:hover {
+  text-decoration: none;
+}
+.menu__main a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  text-decoration: none;
+  padding: 0 3px;
+  line-height: 29px;
+  border-bottom: 2px solid #9ea3b7;
+}
+.menu__main a img {
+  width: 13px;
+  flex-shrink: 0;
+  padding-right: 10px;
+}
+.footer {
+  width: 100%;
+  margin: auto;
+  background-color: #387fbf;
+  border-top: 4px solid #fe9922;
+}
+.footer__row {
+  max-width: 1000px;
+  display: flex;
+  justify-content: flex-start;
+  margin: auto;
+  padding: 20px 20px 0;
+}
+.footer__row:last-child {
+  border-top: 1px solid hsla(0, 0%, 100%, 0.5);
+  margin-top: 15px;
+  padding-bottom: 15px;
+  padding-top: 20px;
+}
+.footer__col {
+  width: 25%;
+  color: #fff;
+}
+.footer__col.\--icons {
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+}
+.footer__row a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 12px;
+}
+.footer__row a:hover {
+  text-decoration: underline;
+}
+.footer__row li {
+  padding-bottom: 1px;
+}
+.footer__row .header_footer_list {
+  font-size: 14px;
+  text-transform: uppercase;
+  padding-bottom: 15px;
+}
+.footer_img img {
+  display: inline-block;
+  margin-top: 10px;
+}
+.footer__left-link {
+  font-size: 13px;
+  background: url(https://www.chocotravel.com/media/v3/media/images/sprite-footer_03.png)
+    no-repeat;
+  padding: 4px 0 0 30px;
+  font-family: OpenSans-Semibold, Arial, sans-serif;
+}
+.footer__left-link.contacts {
+  background-position: 0 -20px;
+}
+.footer__left {
+  float: left;
+}
+.footer__right {
+  float: right;
+}
+.footer__logos li {
+  float: right;
+  margin: 0 0 0 10px;
+}
+.footer__menu {
+  font-size: 13px;
+  border-top: 1px solid #9ea3b7;
+  margin-top: 10px;
+}
+.footer__menu li {
+  float: left;
+  margin: 0 20px 0 0;
+  line-height: 30px;
+}
+.copyright {
+  float: right !important;
+  margin: 0 !important;
+}
+.footer-icons {
+  display: flex;
+  justify-content: flex-start;
+}
+.footer-icons__item {
+  display: inline-block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  margin: 6px;
+}
+.footer-icons__item:first-child {
+  margin-left: 0;
+}
+.footer-icons__item:last-child {
+  margin-right: 0;
+}
+.footer-icons__item--visa {
+  background-image: url(https://www.chocotravel.com/media/v3/media/images/visa-pay-logo.svg);
+  width: 46px;
+  height: 16px;
+}
+.footer-icons__item--master {
+  background-image: url(https://www.chocotravel.com/media/v3/media/images/master-card.svg);
+  height: 17px;
+  width: 28px;
+}
+.footer-icons__item--union-pay {
+  background-image: url(https://www.chocotravel.com/media/v3/media/images/union-pay.svg);
+  width: 32px;
+}
+.footer-icons__item--depositphotos {
+  background-image: url(https://www.chocotravel.com/media/v3/media/images/depositphotos.svg);
+  width: 105px;
+  height: 17px;
+}
+.footer-icons__item--astana_hub {
+  background-image: url(https://www.chocotravel.com/media/v3/media/images/astana-hub.png);
+  width: 100px;
+  height: 30px;
+}
+.social {
+  width: 25px;
+  height: 25px;
+  background-size: 25px 25px;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  display: inline-block;
+  opacity: 0.5;
+  margin-right: 18px;
+}
+.social:hover {
+  opacity: 1;
+}
+.social--fb {
+  background-image: url(https://www.chocotravel.com/media/v3/media/images/social/social__fb.svg);
+}
+.social--fb:hover {
+  background-image: url(https://www.chocotravel.com/media/v3/media/images/social/social__fb--active.svg);
+}
+.social--inst {
+  background-image: url(https://www.chocotravel.com/media/v3/media/images/social/social__inst.svg);
+}
+.social--inst:hover {
+  background-image: url(https://www.chocotravel.com/media/v3/media/images/social/social__inst--active.svg);
+}
+li,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
