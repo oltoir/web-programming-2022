@@ -51,8 +51,20 @@ body {
   border: none;
   padding: 14px;
   outline: none;
+  font-size: 16px;
 }
 
 .asdasdasdsa {
   border-left: 1px solid gray;
+}
+
+.container-cities {
+  display: flex;
+  margin-top: 10px;
+  gap: 160px;
+  font-size: 12px;
+}
+
+.container-cities i {
+  border-bottom: 1px dashed #212c5b;
 }
