@@ -1,594 +1,409 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Купить билеты на поезд в Казахстане. Заказать ЖД билеты на поезд
-            онлайн, цены</title>
-        <meta charset="utf-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0,
-            minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-        <link rel="stylesheet" href="../../assets/root.css">
-    </head>
-    <body>
-        <div class="chocofamily-logos">
-            <div id="choco-projects" class="choco-projects">
-                <ul class="choco-projects__list">
-                    <li class="choco-projects__item
-                        choco-projects__item--chocolife">
-                        <a
-                            class="choco-projects__link"
-                            target="_blank">
-                            <span class="choco-projects__title">Скидки до 90%</span>
-                            <div class="choco-projects__logo"></div>
-                        </a>
-                    </li>
-                    <li class="choco-projects__item
-                        choco-projects__item--tripfor">
-                        <span class="choco-projects__title">Авиабилеты</span>
-                        <div class="choco-projects__logo"></div>
-                    </li>
-                    <li class="choco-projects__item
-                        choco-projects__item--lensmark">
-                        <a
-                            class="choco-projects__link"
-                            rel="nofollow"
-                            target="_blank">
-                            <span class="choco-projects__title">Оптика</span>
-                            <div class="choco-projects__logo"></div>
-                        </a>
-                    </li>
-                    <li class="choco-projects__item
-                        choco-projects__item--chocofood">
-                        <a
-                            class="choco-projects__link"
-                            rel="nofollow"
-                            target="_blank">
-                            <span class="choco-projects__title">Заказ Еды</span>
-                            <div class="choco-projects__logo"></div>
-                        </a>
-                    </li>
-                    <li class="choco-projects__item
-                        choco-projects__item--idoctor">
-                        <a
-                            class="choco-projects__link"
-                            rel="nofollow"
-                            target="_blank">
-                            <span class="choco-projects__title">Поиск врачей</span>
-                            <div class="choco-projects__logo"></div>
-                        </a>
-                    </li>
-                </ul>
-                <div class="login">
-                    <input id="is-authorized-input" type="hidden" value="">
-                    <div class="text-xs font-semibold">
-                        <div
-                            id="auth-links"
-                            class="flex items-center ">
-                            <a
-                                class="mr-4 text-blue-400 underline">
-                                Бизнес аккаунт </a>
-                            <button
-                                id="login-button"
-                                type="button"
-                                class="
-                                py-1 px-4
-                                bg-blue-500 border-solid border border-white
-                                lg:border-none rounded-lg
-                                text-white leading-normal
-                                cursor-pointer
-                                ">
-                                Войти </button>
-                        </div>
-                        <div
-                            id="post-auth-links"
-                            class="relative flex items-center hidden">
-                            <a
-                                id="cab_link"
-                                title=""
-                                class="mr-4 text-blue-400 underline">
-                                Личный кабинет </a>
-                            <a
-                                class="
-                                py-1 px-4
-                                bg-blue-500 border-solid border border-white
-                                lg:border-none rounded-lg
-                                text-white leading-normal
-                                cursor-pointer
-                                no-underline
-                                "
-                                style="font-size: 12px; font-weight: 600;">
-                                Выход </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="lang-switcher">
-                    <div class="lang-switcher__item lang-switcher__item--active
-                        lang-switcher__item--ru">
-                        Рус <img class="lang-switcher__arrow" />
-                    </div>
-                    <div class="lang-switcher__items">
-                        <div
-                            class="
-                            lang-switcher__item
-                            lang-switcher__item--mobile
-                            lang-switcher__item--active
-                            lang-switcher__item--inner
-                            lang-switcher__item--ru"
-                            data-lang="ru">
-                            Рус </div>
-                    </div>
-                </div>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../../assets/main.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Дешевые авиабилеты онлайн</title>
+  </head>
+  <body>
+    <!-- header -->
+    <div class="chocofamily-logos">
+      <div id="choco-projects" class="choco-projects">
+        <ul class="choco-projects__list">
+          <li class="choco-projects__item choco-projects__item--chocolife">
+            <a
+              href="http://chocolife.me/?utm_source=chocotravel.com&amp;utm_medium=plashka"
+              class="choco-projects__link"
+            >
+              <span class="choco-projects__title">Скидки до 90%</span>
+              <div class="choco-projects__logo"></div>
+            </a>
+          </li>
+          <li class="choco-projects__item choco-projects__item--tripfor">
+            <span class="choco-projects__title">Авиабилеты</span>
+            <div class="choco-projects__logo"></div>
+          </li>
+          <li class="choco-projects__item choco-projects__item--lensmark">
+            <a
+              href="http://lensmark.kz/?utm_source=chocotravel.com&amp;utm_medium=plashka"
+              class="choco-projects__link"
+              rel="nofollow"
+              target="_blank"
+            >
+              <span class="choco-projects__title">Оптика</span>
+              <div class="choco-projects__logo"></div>
+            </a>
+          </li>
+          <li class="choco-projects__item choco-projects__item--chocofood">
+            <a
+              href="http://chocofood.kz/?utm_source=chocotravel.com&amp;utm_medium=plashka"
+              class="choco-projects__link"
+              rel="nofollow"
+              target="_blank"
+            >
+              <span class="choco-projects__title">Заказ Еды</span>
+              <div class="choco-projects__logo"></div>
+            </a>
+          </li>
+          <li class="choco-projects__item choco-projects__item--idoctor">
+            <a
+              href="http://idoctor.kz/?utm_source=chocotravel&amp;utm_medium=plashka"
+              class="choco-projects__link"
+              rel="nofollow"
+              target="_blank"
+            >
+              <span class="choco-projects__title">Поиск врачей</span>
+              <div class="choco-projects__logo"></div>
+            </a>
+          </li>
+        </ul>
+        <div class="login">
+          <div class="login__container">
+            <div class="login__inner__container relative flex items-center">
+              <a
+                href="../Cabinet/index.html"
+                style="
+                  margin-right: 4px;
+                  color: rgb(0, 123, 255);
+                  text-decoration: underline;
+                "
+              >
+                Личный кабинет
+              </a>
+              <a class="log-out__button"> Выход </a>
             </div>
+          </div>
         </div>
-        <div
-            id="mobile-menu"
-            class="
-            px-5 py-3
-            flex-shrink-0 lg:hidden
-            flex items-center justify-between
-            bg-white shadow
-            ">
-
-            <button
-                class="
-                p-0 border-none appearance-none
-                bg-transparent outline-none
-                text-blue-500 active:text-blue-600
-                ">
-                <svg height="16" width="21" class="fill-current">
-                    <title>Меню</title>
-                    <path d="M.5 2.382A1.5 1.5 0 012 .882h17a1.5 1.5 0 010
-                        3H2a1.5 1.5 0 01-1.5-1.5zm0 6a1.5 1.5 0 011.5-1.5h17a1.5
-                        1.5 0 010 3H2a1.5 1.5 0 01-1.5-1.5zm1.5 4.5a1.5 1.5 0
-                        000 3h17a1.5 1.5 0 100-3z" />
-                    </svg>
-                </button>
-                <div
-                    id="mobile-drawer"
-                    class="z-modal fixed top-0 left-0 overflow-scroll w-screen
-                    h-screen bg-blue-500 transition-all transition-slow"
-                    style="transform: translateX(100%)">
-                    <nav class="flex flex-col text-lg font-bold">
-                        <a
-                            target="_blank"
-                            class="flex items-center px-10 py-4 no-underline">
-                            <span class="text-white">Информация об отмене рейсов</span>
-                        </a>
-                        <a
-                            class="flex items-center px-10 py-4 no-underline ">
-                            <img>
-                            <span class="text-white ml-5">Авиабилеты</span>
-                        </a>
-                        <a
-                            class="flex items-center px-10 py-5 no-underline
-                            bg-blue-400">
-                            <img>
-                            <span class="text-white ml-5">ЖД билеты</span>
-                        </a>
-                        <a
-                            class="nofollowlink flex items-center px-10 py-5
-                            no-underline">
-                            <img>
-                            <span class="text-white ml-5">Гостиницы</span>
-                        </a>
-                        <a
-                            class="flex items-center px-10 py-5 no-underline ">
-                            <img>
-                            <span class="text-white ml-5">Визы</span>
-                        </a>
-                        <a
-                            class="flex items-center px-10 py-5 no-underline
-                            js-link-event ">
-                            <img>
-                            <span class="text-white ml-5">Для бизнеса</span>
-                        </a>
-                        <a
-                            class="flex items-center px-10 py-5 no-underline
-                            js-link-event ">
-                            <img>
-                            <span class="text-white ml-5">Туры</span>
-                        </a>
-                    </nav>
-                </div>
-            </div> <div class="wrapper">
-                <div class="center">
-                    <div class="header hidden lg:flex">
-                        <div class="header__logo">
-                            <a>
-                                <img
-                                    width="273" height="51">
-                            </a>
-                        </div>
-                        <div class="menu__main">
-                            <a
-                                class="avia js-link-event ">
-                                <img>
-                                <span>Авиабилеты</span>
-                            </a>
-                            <a
-                                class="railways js-link-event selected">
-                                <img>
-                                <span>ЖД билеты</span>
-                            </a>
-                            <a
-                                class="hotel js-link-event">
-                                <img>
-                                <span>Гостиницы</span>
-                            </a>
-                            <a
-                                class="rentalcars js-link-event ">
-                                <img>
-                                <span>Авто</span>
-                            </a>
-                            <a
-                                class="visas js-link-event ">
-                                <img>
-                                <span>Визы</span>
-                            </a>
-                            <a
-                                class="b2b js-link-event ">
-                                <div class="b2b-icon-wrapper">
-                                    <img>
-                                </div>
-                                <span>Корпоративным клиентам</span>
-                            </a>
-                            <a
-                                class="tours js-link-event ">
-                                <div class="tours-icon-wrapper">
-                                    <img>
-                                </div>
-                                <span>Туры</span>
-                            </a>
-                        </div>
-                        <div class="clear"></div>
-                    </div>
-                    <div class="content">
-                        <div class="content-center">
-
-                            <div class="railways_page">
-                                <div class="mainpage_about_txt mt-5">
-                                    <h1 class="text-xl md:text-3xl">Купить ЖД
-                                        билеты по Казахстану онлайн</h1>
-                                    <h2 class="text-sm sm:text-base md:text-xl">Покупайте
-                                        билеты на поезд онлайн вместе с
-                                        Chocotravel.com</h2>
-                                </div>
-
-                                <div id="rw-banners"></div>
-                                <div class="about_us_text">
-                                    <h3>ЖД билеты по всем направлениям АО
-                                        &laquo;Қазақстан Темiр Жолы&raquo;</h3>
-                                    <p>Chocotravel.com оформляет билеты на поезд
-                                        по всем направлениям, которые
-                                        обслуживает АО &laquo;КТЖ&raquo;. Это
-                                        означает, что вы можете заказать жд
-                                        билет по всем городам Казахстана и не
-                                        только. Самые популярные направления:
-                                        <a>Актобе</a>,
-                                        <a>Алматы</a>,
-                                        <a>Шымкент</a>,
-                                        <a>Тараз</a>,
-                                        <a>Жезказган</a>,
-                                        <a>Атырау</a>,
-                                        <a>Караганда</a>,
-                                        <a>Кокшетау</a>,
-                                        <a>Костанай</a>,
-                                        <a>Кызылорда</a>,
-                                        <a>Москва</a>,
-                                        <a>Семей</a>,
-                                        <a>Петропавловск</a>,
-                                        <a>Павлодар</a>,
-                                        <a>Актау</a>,
-                                        <a>Ташкент</a>,
-                                        <a>Талдыкорган</a>,
-                                        <a>Нур-Султан</a>,
-                                        <a>Усть-Каменогорск</a>,
-                                        <a>Уральск</a>.</p>
-                                    <p>Chocotravel.com предлагает вам заказать
-                                        билеты на поезд &laquo;Казахстан Темир
-                                        Жолы&raquo; (КТЖ) по любому доступному
-                                        направлению. Легко бронируйте дешевые
-                                        места на популярные рейсы в такие
-                                        города, как Алматы, Шымкент, Актобе,
-                                        Тараз, Атырау, Жезказган, Караганда,
-                                        Кокшетау, Костанай, Кызылорда, Семей,
-                                        Петропавловск, Павлодар, Актау, Ташкент,
-                                        Талдыкорган, Астана, Усть-Каменогорск,
-                                        Уральск, Москва и другие.</p><p>Крупнейший
-                                        железнодорожный перевозчик Казахстана
-                                        вот уже более 20 лет обеспечивает
-                                        первоклассное обслуживание и предлагает
-                                        низкие цены на ж/д билеты. Ваше
-                                        путешествие пройдет в просторных вагонах
-                                        любого класса комфорта: пассажиры могут
-                                        выбрать недорогой плацкарт, удобное купе
-                                        или уединенный люкс. В парке КТЖ более
-                                        1500 локомотивов, а составы компании
-                                        отправляются по всей протяженности
-                                        железнодорожных путей страны &ndash; в
-                                        общей сложности 14&nbsp;000 км.</p><p>Наш
-                                        сервис предоставляет полную информацию о
-                                        расписании рейсов: вы можете выбрать
-                                        удобный день для поездки, уточнив время
-                                        отправления и прибытия, а затем сразу же
-                                        забронировать ж/д билеты онлайн. Больше
-                                        никаких очередей в кассах и
-                                        перекупщиков!</p><h2>Как пользоваться
-                                        услугами Chocotravel.com?</h2><p>Преодоление
-                                        любых расстояний с Chocotravel.com
-                                        &ndash; это ощутимая экономия времени!
-                                        Поиск, оформление и покупка
-                                        железнодорожных билетов займет у вас
-                                        всего 3 минуты. Чтобы быстро подобрать
-                                        рейс:</p><ul><li>Укажите в поисковой
-                                            форме свой маршрут;</li><li>Уточните
-                                            дату поездки и количество туристов;</li><li>Нажмите
-                                            &laquo;Найти&raquo; &ndash; и вот
-                                            уже перед вами список вариантов!</li></ul><p>Ориентируйтесь
-                                        на стоимость, длительность пути,
-                                        расположение свободных мест в вагоне,
-                                        время отбытия и прибытия. Поменяйте
-                                        день, чтобы оценить все альтернативы.
-                                        Также вы можете составить сложный
-                                        маршрут с пересадкой на определенной
-                                        станции &ndash; наш онлайн-сервис
-                                        поможет и в этом!</p><p>Чтобы купить
-                                        билеты на поезд, заполните персональную
-                                        анкету и приступайте к оплате. Кроме
-                                        основного тарифа, в цену уже входят все
-                                        необходимые сборы, включая плату за
-                                        постельное белье.</p><p>После
-                                        подтверждения платежа электронный билет
-                                        будет доступен в вашем личном кабинете,
-                                        его повторная продажа запрещена. Вы
-                                        можете распечатать его и взять с собой
-                                        как памятку. Обратите внимание:
-                                        проездной документ без
-                                        онлайн-регистрации нужно обменять на
-                                        бланк строгой отчетности на вокзале
-                                        минимум за час до отправления.</p><h2>Хотите
-                                        выгодно купить ж/д билеты? Только на
-                                        Chocotravel.com!</h2><ul><li>Круглосуточная
-                                            поддержка;</li><li>Возможность
-                                            возврата денег при отмене поездки;</li><li>3%
-                                            скидки от Booking.com для наших
-                                            подписчиков;</li><li>Ваша личная
-                                            информация надежно сохраняется в
-                                            системе &ndash; чувствуйте себя в
-                                            безопасности!</li><li>Скидки при
-                                            сотрудничестве с корпоративными
-                                            клиентами;</li><li>Удобное мобильное
-                                            приложение на Android и iOS с полным
-                                            функционалом: просто включите свой
-                                            смартфон &ndash; и ищите ж/д билеты
-                                            онлайн в Казахстане!</li></ul>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
+        <div class="lang-switcher">Рус</div>
+      </div>
+    </div>
+    <div class="center">
+      <div class="header">
+        <div class="header__logo" itemtype="http://schema.org/Organization">
+          <a href="#">
+            <img
+              itemprop="logo"
+              src="https://www.chocotravel.com/media/v3/media/images/chocotravel-logo.svg"
+              width="273"
+              height="51"
+              alt="Chocotravel.com"
+              title="Авиабилеты дешево онлайн"
+            />
+          </a>
+        </div>
+        <div class="menu__main">
+          <a href="#">
+            <img
+              src="https://www.chocotravel.com/media/v3/media/images/plane_active.svg"
+              alt="Авиабилеты"
+            />
+            <span>Авиабилеты</span>
+          </a>
+          <a href="#">
+            <img
+              src="https://www.chocotravel.com/media/v3/media/images/jd_ticket.png"
+              alt="ЖД билеты"
+            />
+            <span>ЖД билеты</span>
+          </a>
+          <a href="#">
+            <img
+              src="https://www.chocotravel.com/media/v3/media/images/hotel.svg"
+              alt="Гостиницы"
+            />
+            <span>Гостиницы</span>
+          </a>
+          <a href="#">
+            <img
+              src="https://www.chocotravel.com/media/v3/media/images/rentalcars.svg"
+              alt="Авто"
+            />
+            <span>Авто</span>
+          </a>
+          <a href="#">
+            <img
+              src="https://www.chocotravel.com/media/v3/media/images/visa.svg"
+              alt="Визы"
+            />
+            <span>Визы</span>
+          </a>
+          <a href="#">
+            <div class="b2b-icon-wrapper">
+              <img
+                src="https://www.chocotravel.com/media/v3/media/images/msb.svg"
+                alt="Корпоративным клиентам"
+              />
             </div>
+            <span>Корпоративным клиентам</span>
+          </a>
+          <a href="#">
+            <div class="tours-icon-wrapper">
+              <img
+                src="https://www.chocotravel.com/media/v3/media/images/tours.svg"
+                alt="Туры"
+              />
+            </div>
+            <span>Туры</span>
+          </a>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+    <!-- header -->
 
+    <!-- content -->
 
-            <footer>
-                <div class="footer">
-                    <div class="footer__row">
-                        <div class="footer__col">
-                            <ul>
-                                <li class="header_footer_list">Популярные
-                                    направления</li>
-                                <li><a>Алматы
-                                        — Астана</a></li>
-                                <li><a>Алматы
-                                        — Дубай</a></li>
-                                <li><a>Алматы
-                                        — Стамбул</a></li>
-                                <li><a>Алматы
-                                        — Бангкок</a></li>
-                                <li><a>Алматы
-                                        — Москва</a></li>
-                                <li><a>Популярные направления</a></li>
-                            </ul>
-                        </div>
-                        <div class="footer__col">
-                            <ul>
-                                <li class="header_footer_list">Авиакомпании</li>
-                                <li><a>Air Astana</a></li>
-                                <li><a>Qazaq Air</a>
-                                </li>
-                                <li><a>Aeroflot</a>
-                                </li>
-                                <li><a>SCAT</a></li>
-                                <li><a>Все авиакомпании</a></li>
-                            </ul>
-                        </div>
-                        <div class="footer__col">
-                            <ul>
-                                <li class="header_footer_list">Популярные страны</li>
-                                <li><a>Авиабилеты
-                                        в Россию</a></li>
-                                <li><a>Авиабилеты
-                                        в Таиланд</a></li>
-                                <li><a>Авиабилеты
-                                        в Турцию</a></li>
-                                <li><a>Авиабилеты
-                                        в Германию</a></li>
-                                <li><a>Авиабилеты
-                                        в Грузию</a></li>
-                                <li><a>Все страны</a></li>
-                            </ul>
-                        </div>
-                        <div class="footer__col">
-                            <ul>
-                                <li class="header_footer_list">Продукты</li>
-                                <li><a>Авиабилеты</a></li>
-                                <li><a>ЖД
-                                        билеты</a></li>
-                                <li><a>Визовая
-                                        поддержка</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="footer__row">
-                        <div class="footer__col">
-                            <ul>
-                                <li class="header_footer_list">О нас</li>
-                                <li><a>О компании</a></li>
-                                <li><a>Блог</a></li>
-                                <li><a>Способы оплаты</a></li>
-                                <li><a>Контакты</a></li>
-                                <li><a>Публичная оферта</a></li>
-                                <li><a>Публичная
-                                        оферта ЖД</a></li>
-                                <li><a>СМИ о нас</a></li>
-                            </ul>
-                        </div>
-                        <div class="footer__col">
-                            <ul>
-                                <li class="header_footer_list">Пользователям</li>
-                                <li><a>Вопросы-ответы</a></li>
-                                <li><a>Отзывы</a></li>
-                                <li><a>Лучшие цены</a></li>
-                                <li><a>Регистрация
-                                        на рейс</a></li>
-                            </ul>
-                        </div>
-                        <div class="footer__col">
-                            <ul>
-                                <li class="header_footer_list">Полезная
-                                    информация</li>
-                                <li><a>Авиакомпании</a></li>
-                                <li><a>Аэропорты</a></li>
-                                <li><a>Страны</a></li>
-                                <li><a>Города</a></li>
-                            </ul>
-                        </div>
-                        <div class="footer__col">
-                            <ul>
-                                <li class="header_footer_list">Партнерам</li>
-                                <li><a>Корпоративным клиентам</a></li>
-                                <li><a>Рекламодателям</a></li>
-                                <li><a>Сотрудничество</a></li>
-                                <li><a>Стать
-                                        агентом</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="footer__row">
-                        <div class="footer__col --icons">
-                            <ul>
-                                <li class="footer_img">
-                                    <div class="footer-icons">
-                                        <div class="footer-icons__item
-                                            footer-icons__item--visa"></div>
-                                        <div class="footer-icons__item
-                                            footer-icons__item--master"></div>
-                                        <div class="footer-icons__item
-                                            footer-icons__item--union-pay"></div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="footer__col --icons">
-                            <ul>
-                                <li class="footer_img">
-                                    <div class="footer-icons">
-                                        <a
-                                            class="footer-icons__item
-                                            footer-icons__item--astana_hub"></a>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="footer__col --icons">
-                            <ul>
-                                <li class="footer_img">
-                                    <a
-                                        class="social social--inst"></a>
-                                    <a
-                                        class="social social--fb"></a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="footer__col --icons">
-                            <ul>
-                                <li class="footer_img">
-                                    <div class="footer-icons">
-                                        <div class="footer-icons__item
-                                            footer-icons__item--depositphotos"></div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+    <main class="container">
+      <div>
+        <section class="container-header">
+          <h2>Купить ЖД билеты по Казахстану онлайн</h2>
+          <span
+            >Покупайте билеты на поезд онлайн вместе с Chocotravel.com
+          </span>
+        </section>
+
+        <section class="container-search">
+          <div style="width: 250px">
+            <input type="text" placeholder="Откуда" />
+          </div>
+          <div class="asdasdasdasdsad">
+            <img alt="swap" />
+          </div>
+          <div style="width: 250px">
+            <input type="text" placeholder="Куда" />
+          </div>
+          <div style="width: 250px" class="asdasdasdsa">
+            <input type="text" placeholder="Дата туда/обратно" />
+          </div>
+          <div>
+            <img alt="swap" />
+          </div>
+          <button>Найти</button>
+        </section>
+      </div>
+    </main>
+
+    <!-- content -->
+
+    <!-- footer -->
+    <footer>
+      <div class="footer">
+        <div class="footer__row">
+          <div class="footer__col">
+            <ul>
+              <li class="header_footer_list">Популярные направления</li>
+              <li>
+                <a
+                  href="/ru/flights/city/almaty/astana"
+                  title="авиабилеты из алматы в астану"
+                  >Алматы — Астана</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/ru/flights/city/almaty/dubai"
+                  title="авиабилеты из алматы в дубай"
+                  >Алматы — Дубай</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/ru/flights/city/almaty/istanbul"
+                  title="авиабилеты из алматы в стамбул"
+                  >Алматы — Стамбул</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/ru/flights/city/almaty/bangkok"
+                  title="авиабилеты из алматы в бангкок"
+                  >Алматы — Бангкок</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/ru/flights/city/almaty/moscow"
+                  title="авиабилеты из алматы в москву"
+                  >Алматы — Москва</a
+                >
+              </li>
+              <li>
+                <a href="/ru/flights" title="популярные авиарейсы"
+                  >Популярные направления</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <ul>
+              <li class="header_footer_list">Авиакомпании</li>
+              <li>
+                <a
+                  href="/ru/aircompanies/air-astana/kc"
+                  title="авиакомпания air astana эйр астана"
+                  >Air Astana</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/ru/aircompanies/qazaq-air/iq"
+                  title="казах эйр qazaq air"
+                  >Qazaq Air</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/ru/aircompanies/aeroflot/su"
+                  title="авиакомпания аэрофлот aeroflot"
+                  >Aeroflot</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/ru/aircompanies/scat-airlines/dv"
+                  title="авиакомпания SCAT"
+                  >SCAT</a
+                >
+              </li>
+              <li><a href="/ru/aircompanies">Все авиакомпании</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <ul>
+              <li class="header_footer_list">Популярные страны</li>
+              <li><a href="/ru/countries/russia/ru">Авиабилеты в Россию</a></li>
+              <li>
+                <a href="/ru/countries/thailand/th">Авиабилеты в Таиланд</a>
+              </li>
+              <li><a href="/ru/countries/turkey/tr">Авиабилеты в Турцию</a></li>
+              <li>
+                <a href="/ru/countries/germany/de">Авиабилеты в Германию</a>
+              </li>
+              <li>
+                <a href="/ru/countries/georgia/ge">Авиабилеты в Грузию</a>
+              </li>
+              <li><a href="/ru/countries">Все страны</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <ul>
+              <li class="header_footer_list">Продукты</li>
+              <li><a href="/" title="авиабилеты онлайн">Авиабилеты</a></li>
+              <li>
+                <a href="../Railways/index.html" title="жд билеты">ЖД билеты</a>
+              </li>
+              <li>
+                <a href="/ru/visa" title="виза онлайн">Визовая поддержка</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__row">
+          <div class="footer__col">
+            <ul>
+              <li class="header_footer_list">О нас</li>
+              <li><a href="/ru/about">О компании</a></li>
+              <li><a href="/ru/blog">Блог</a></li>
+              <li><a href="/ru/payments">Способы оплаты</a></li>
+              <li><a href="/ru/contacts">Контакты</a></li>
+              <li><a href="/ru/agreement">Публичная оферта</a></li>
+              <li><a href="/ru/agreement/railways">Публичная оферта ЖД</a></li>
+              <li><a href="/ru/articles">СМИ о нас</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <ul>
+              <li class="header_footer_list">Пользователям</li>
+              <li><a href="/ru/faq">Вопросы-ответы</a></li>
+              <li><a href="/ru/feedback">Отзывы</a></li>
+              <li><a href="/ru/recommend">Лучшие цены</a></li>
+              <li>
+                <a href="/ru/airlinesregistration">Регистрация на рейс</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <ul>
+              <li class="header_footer_list">Полезная информация</li>
+              <li><a href="/ru/aircompanies">Авиакомпании</a></li>
+              <li><a href="/ru/airports">Аэропорты</a></li>
+              <li><a href="/ru/countries">Страны</a></li>
+              <li><a href="/ru/city">Города</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <ul>
+              <li class="header_footer_list">Партнерам</li>
+              <li><a href="/ru/msb">Корпоративным клиентам</a></li>
+              <li><a href="/ru/advertizing">Рекламодателям</a></li>
+              <li><a href="/ru/for-partners">Сотрудничество</a></li>
+              <li><a href="/ru/subagents-welcome">Стать агентом</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__row">
+          <div class="footer__col --icons">
+            <ul>
+              <li class="footer_img">
+                <div class="footer-icons">
+                  <div
+                    class="footer-icons__item footer-icons__item--visa"
+                  ></div>
+                  <div
+                    class="footer-icons__item footer-icons__item--master"
+                  ></div>
+                  <div
+                    class="footer-icons__item footer-icons__item--union-pay"
+                  ></div>
                 </div>
-                <div class="mobile-footer">
-                    <ul class="footer-mobile-menu">
-                        <li class="footer-mobile-menu__item">
-                            <a
-                                class="footer-mobile-menu__item-link">
-                                <img
-                                    class="footer-mobile-menu__item-icon">
-                                Вопросы и ответы </li>
-                            <li class="footer-mobile-menu__item">
-                                <a
-                                    class="footer-mobile-menu__item-link">
-                                    <img
-                                        class="footer-mobile-menu__item-icon">
-                                    Публичная оферта </a>
-                            </li>
-                            <li class="footer-mobile-menu__item">
-                                <a
-                                    class="footer-mobile-menu__item-link">
-                                    <img
-                                        class="footer-mobile-menu__item-icon">
-                                    Публичная оферта ЖД </a>
-                            </li>
-                            <li class="footer-mobile-menu__item">
-                                <a
-                                    class="footer-mobile-menu__item-link"> <img
-                                        class="footer-mobile-menu__item-icon">
-                                    Информация </li>
-                                <li class="footer-mobile-menu__item">
-                                    <a
-                                        class="footer-mobile-menu__item-link">
-                                        <img
-                                            class="footer-mobile-menu__item-icon">
-                                        Карта сайта </a>
-                                </li>
-                                <li class="footer-mobile-menu__item">
-                                    <a
-                                        class="footer-mobile-menu__item-link">
-                                        <img
-                                            class="footer-mobile-menu__item-icon">
-                                        Отзывы </a>
-                                </li>
-                                <li class="footer-mobile-menu__item">
-                                    <a
-                                        class="footer-mobile-menu__item-link">
-                                        <img
-                                            class="footer-mobile-menu__item-icon">
-                                        СМИ о нас </a>
-                                </li>
-                                <li class="footer-mobile-menu__item">
-                                    <a
-                                        class="footer-mobile-menu__item-link">
-                                        <img
-                                            class="footer-mobile-menu__item-icon">
-                                        Способы оплаты </a>
-                                </li>
-                                <li class="footer-mobile-menu__item">
-                                    <a
-                                        class="footer-mobile-menu__item-link">
-                                        <img
-                                            class="footer-mobile-menu__item-icon">
-                                        Контакты </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </footer>
-
-                </body>
-            </html>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__col --icons">
+            <ul>
+              <li class="footer_img">
+                <div class="footer-icons">
+                  <a
+                    class="footer-icons__item footer-icons__item--astana_hub"
+                    target="_blank"
+                    rel="nofollow"
+                    href="https://astanahub.com/"
+                  ></a>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__col --icons">
+            <ul>
+              <li class="footer_img">
+                <a
+                  href="https://www.instagram.com/chocotravel"
+                  target="_blank"
+                  class="social social--inst"
+                ></a>
+                <a
+                  href="https://www.facebook.com/chocotravelcom"
+                  target="_blank"
+                  class="social social--fb"
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__col --icons">
+            <ul>
+              <li class="footer_img">
+                <div class="footer-icons">
+                  <div
+                    class="footer-icons__item footer-icons__item--depositphotos"
+                  ></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer -->
+  </body>
+</html>
