@@ -94,3 +94,9 @@ body {
   padding: 8px;
   justify-content: space-evenly;
 }
+
+.last {
+  display: grid;
+  gap: 15px;
+  margin-top: 50px;
+}
