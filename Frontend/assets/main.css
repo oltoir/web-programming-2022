@@ -382,3 +382,267 @@ ul {
   padding: 0;
   list-style: none;
 }
+.center__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+h1 {
+  font-size: 20px;
+}
+.center__content p {
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  display: block;
+  max-width: 630px;
+  margin: 0 auto 32px;
+}
+.mainpage-advantages-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.mainpage-advantage {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px 20px 38px;
+  width: 320px;
+  height: 275px;
+  box-sizing: border-box;
+  margin-bottom: 30px;
+  background-color: #fff;
+  border-radius: 5px;
+  border-radius: var(--radius-md);
+  box-shadow: 0 2px 5px rgb(186 222 255 / 50%);
+  box-shadow: var(--elevation-1);
+}
+.mainpage-advantage__img {
+  margin-bottom: 14px;
+  display: block;
+  width: 60px;
+  height: 60px;
+}
+.mainpage-advantage__heading {
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  color: #212c5b;
+  margin: 0 0 10px;
+}
+.mainpage-advantage__text {
+  font-size: 15px;
+  font-weight: 400;
+  color: #9ea3b7;
+  text-align: center;
+  margin: 0;
+}
+.chocotravel-video-guide-grid {
+  display: flex;
+  align-items: flex-start;
+}
+.chocotravel-video-guide-grid__left {
+  display: flex;
+  flex-direction: column;
+  width: 245px;
+  margin-right: 11px;
+}
+.chocotravel-video-guide-grid__item-mini {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 7px;
+}
+.chocotravel-video-guide-grid-item__num {
+  width: 85px;
+  height: 135px;
+  font-size: 80px;
+  font-weight: 600;
+  padding-top: 12px;
+  box-sizing: border-box;
+  text-align: center;
+  color: #fff;
+  background-color: #67a5d9;
+}
+.chocotravel-video-guide-grid__desc {
+  display: flex;
+  flex-direction: column;
+  background: #3a83c2;
+  width: 160px;
+  height: 135px;
+  align-items: center;
+  box-sizing: border-box;
+  justify-content: center;
+}
+.mainpage-video-guide {
+  position: relative;
+  width: 744px;
+  height: 419px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(/media/v3/media/images/video.jpg);
+  background-repeat: no-repeat;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+.mainpage-video-guide__overlay {
+  position: absolute;
+  padding-left: 15px;
+  padding-top: 15px;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  font-family: sans-serif;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.6), transparent);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #eee;
+  padding-right: 25px;
+}
+.mainpage-video-guide__play {
+  width: 75px;
+  height: 53px;
+  z-index: 3;
+  background-image: url(https://www.chocotravel.com/media/v3/media/images/youtube_logo--black.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: 0.1s ease-in-out;
+}
+.chocotravel-video-guide-grid__desc p {
+  font-size: 16px;
+  text-align: center;
+  color: #fff;
+}
+.mainpage__subscribe-form {
+  width: 100%;
+  box-sizing: border-box;
+  background: #fff;
+  box-shadow: 0 2px 5px rgb(186 222 255 / 50%);
+  box-shadow: var(--elevation-1);
+  padding: 15px 16px 15px 64px;
+  color: #353535;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  height: 80px;
+  border-radius: 5px;
+  border-radius: var(--radius-md);
+}
+.mainpage__subscribe-form-text {
+  width: 55%;
+  display: flex;
+}
+.mainpage__subscribe-form-actions {
+  display: flex;
+  justify-content: flex-end;
+  width: 45%;
+}
+.mainpage__subscribe-form-email {
+  margin-right: 15px;
+}
+.mainpage__subscribe-form-text {
+  width: 55%;
+  display: flex;
+}
+.mainpage__subscribe-form-email-input {
+  border-radius: 3px;
+  border-radius: var(--radius-xs);
+  font-size: 14px;
+  background: #fff;
+  padding: 0 10px;
+  height: 40px;
+  color: #383838;
+  color: var(--color-dark-text);
+  width: 240px;
+  border: 1px solid #cfd1db;
+  border: 1px solid var(--color-light-gray);
+  box-sizing: border-box;
+}
+.mainpage__subscribe-form-button {
+  border: none;
+  padding: 0 10px;
+  width: 136px;
+  height: 40px;
+  cursor: pointer;
+  color: #fff;
+  outline: 0;
+  background: #ff8a00;
+  position: relative;
+  z-index: 1;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  font-size: 14px;
+  border-radius: 3px;
+  border-radius: var(--radius-xs);
+}
+.mainpage__subscribe-form-text img {
+  margin-right: 54px;
+}
+.mainpage__subscribe-form-text p {
+  margin: 0;
+  padding: 0 10px 0 0;
+}
+.about_us_text {
+  clear: both;
+  margin-top: 20px;
+  padding-top: 10px;
+  color: #3b3e4d;
+  font-size: 13px;
+  text-align: justify;
+  border-top: 2px solid #9ea3b7;
+}
+.install-app-mainpage-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background: #6290c1;
+  padding: 0 30px;
+  box-sizing: border-box;
+  margin-top: 45px;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  color: white;
+}
+.install-app-mainpage-btn,
+.install-app-mainpage-input {
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  font-size: 16px;
+  border-radius: 8px;
+}
+.install-app-mainpage-input {
+  flex-grow: 1;
+  background-color: #fff;
+  padding-left: 8px;
+  height: 38px;
+}
+.install-app-mainpage-btn {
+  width: 140px;
+  height: 40px;
+  background-color: #ff8a00;
+  text-align: center;
+  color: #fff;
+  margin-left: -30px;
+  cursor: pointer;
+}
+
+.install-app-mainpage-links {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 10px;
+  font-size: 12px;
+  color: #fff;
+  padding-top: 20px;
+}
