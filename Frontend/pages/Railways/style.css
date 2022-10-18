@@ -3,10 +3,18 @@ body {
 }
 
 .container {
-  height: 100vh;
   background-color: #ecfbff;
   display: flex;
   justify-content: center;
+}
+
+.container-www {
+  width: 1000px;
+  padding-bottom: 100px;
+}
+
+.sadasdasdvgdfg {
+  padding-top: 50px;
 }
 
 .container-header {
@@ -67,4 +75,15 @@ body {
 
 .container-cities i {
   border-bottom: 1px dashed #212c5b;
+}
+
+.container-cities__oreder {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.container-cities__oreder div {
+  display: flex;
+  width: 300px;
 }
