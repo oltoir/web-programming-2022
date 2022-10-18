@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="../../assets/main.css" />
+    <link rel="stylesheet" href="../../assets/root2.css" />
     <title>Дешевые авиабилеты онлайн</title>
   </head>
   <body>
@@ -21,11 +21,11 @@
               <div class="choco-projects__logo"></div>
             </a>
           </li>
-          <li class="choco-projects__item choco-projects__item--tripfor">
+          <li class="choco-projects__item">
             <span class="choco-projects__title">Авиабилеты</span>
             <div class="choco-projects__logo"></div>
           </li>
-          <li class="choco-projects__item choco-projects__item--lensmark">
+          <li class="choco-projects__item">
             <a
               href="http://lensmark.kz/?utm_source=chocotravel.com&amp;utm_medium=plashka"
               class="choco-projects__link"
@@ -36,7 +36,7 @@
               <div class="choco-projects__logo"></div>
             </a>
           </li>
-          <li class="choco-projects__item choco-projects__item--chocofood">
+          <li class="choco-projects__item">
             <a
               href="http://chocofood.kz/?utm_source=chocotravel.com&amp;utm_medium=plashka"
               class="choco-projects__link"
@@ -47,7 +47,7 @@
               <div class="choco-projects__logo"></div>
             </a>
           </li>
-          <li class="choco-projects__item choco-projects__item--idoctor">
+          <li class="choco-projects__item">
             <a
               href="http://idoctor.kz/?utm_source=chocotravel&amp;utm_medium=plashka"
               class="choco-projects__link"
@@ -60,35 +60,16 @@
           </li>
         </ul>
         <div class="login">
-          <input id="is-authorized-input" type="hidden" value="" />
           <div class="text-xs font-semibold">
-            <div id="auth-links" class="flex items-center hidden">
+            <div class="relative flex items-center">
               <a
-                href="https://b2b.chocotravel.com/"
-                class="mr-4 text-blue-400 underline"
-              >
-                Бизнес аккаунт
-              </a>
-              <button
-                id="login-button"
-                type="button"
-                class="py-1 px-4 bg-blue-500 border-solid border border-white lg:border-none rounded-lg text-white leading-normal cursor-pointer"
-              >
-                Войти
-              </button>
-            </div>
-            <div id="post-auth-links" class="relative flex items-center">
-              <a
-                id="cab_link"
-                href="/cabinet"
-                title=""
+                href="../Cabinet/index.html"
                 class="mr-4 text-blue-400 underline"
               >
                 Личный кабинет
               </a>
               <a
-                href="/avia/auth/logout"
-                class="py-1 px-4 bg-blue-500 border-solid border border-white lg:border-none rounded-lg text-white leading-normal cursor-pointer no-underline"
+                class="py-1 px-4 bg-blue-500 border-solid border border-white rounded-lg text-white leading-normal cursor-pointer no-underline"
                 style="font-size: 12px; font-weight: 600"
               >
                 Выход
@@ -97,157 +78,89 @@
           </div>
         </div>
         <div class="lang-switcher" tabindex="1">
-          <div
-            class="lang-switcher__item lang-switcher__item--active lang-switcher__item--ru"
-          >
-            Рус
-            <img
-              class="lang-switcher__arrow"
-              src="https://www.chocotravel.com/media/v3/media/images/arrow-black.svg"
-              role="presentation"
-              width="12"
-              height="12"
-              alt=""
-            />
-          </div>
-          <div class="lang-switcher__items">
-            <div
-              class="lang-switcher__item lang-switcher__item--mobile lang-switcher__item--active lang-switcher__item--inner lang-switcher__item--ru"
-              data-lang="ru"
-            >
-              Рус
-            </div>
-            <div
-              class="lang-switcher__item lang-switcher__item--inner lang-switcher__item--kz"
-              data-lang="kz"
-            >
-              Қаз
-            </div>
-            <div
-              class="lang-switcher__item lang-switcher__item--inner lang-switcher__item--en"
-              data-lang="en"
-            >
-              Eng
-            </div>
-          </div>
+          <div class="lang-switcher__item">Рус</div>
         </div>
       </div>
     </div>
-    <div
-      id="mobile-menu"
-      class="px-5 py-3 flex-shrink-0 lg:hidden flex items-center justify-between bg-white shadow"
-    >
-      <div itemscope="" itemtype="http://schema.org/Organization">
-        <a href="/ru" itemprop="url">
-          <img
-            itemprop="logo"
-            src="https://www.chocotravel.com/media/v3/media/images/chocotravel-logo.svg"
-            width="135"
-            height="23"
-            alt="Chocotravel.com"
-            class="align-middle"
-            title="Авиабилеты дешево онлайн"
-          />
-        </a>
-      </div>
-      <button
-        id="mobile-drawer-burger"
-        class="p-0 border-none appearance-none bg-transparent outline-none text-blue-500 active:text-blue-600"
-      >
-        <svg height="16" width="21" class="fill-current">
-          <title>Меню</title>
-          <path
-            d="M.5 2.382A1.5 1.5 0 012 .882h17a1.5 1.5 0 010 3H2a1.5 1.5 0 01-1.5-1.5zm0 6a1.5 1.5 0 011.5-1.5h17a1.5 1.5 0 010 3H2a1.5 1.5 0 01-1.5-1.5zm1.5 4.5a1.5 1.5 0 000 3h17a1.5 1.5 0 100-3z"
-          ></path>
-        </svg>
-      </button>
-      <div
-        id="mobile-drawer"
-        class="z-modal fixed top-0 left-0 overflow-scroll w-screen h-screen bg-blue-500 transition-all transition-slow"
-        style="transform: translateX(100%)"
-      >
-        <div class="flex justify-end">
-          <button
-            id="mobile-drawer-close"
-            aria-label="Закрыть меню"
-            class="flex items-center justify-center p-0 m-0 w-16 h-12 appearance-none bg-transparent border-none outline-none active:bg-blue-400"
-          >
+    <div class="center">
+      <div class="header">
+        <div
+          class="header__logo"
+          itemscope=""
+          itemtype="http://schema.org/Organization"
+        >
+          <a href="/ru" itemprop="url">
             <img
-              src="https://www.chocotravel.com/media/v3/media/images/icons/close.svg"
-              alt="Закрыть меню"
-              width="16"
-              height="16"
+              itemprop="logo"
+              src="https://www.chocotravel.com/media/v3/media/images/chocotravel-logo.svg"
+              width="273"
+              height="51"
+              alt="Chocotravel.com"
+              title="Авиабилеты дешево онлайн"
             />
-          </button>
-        </div>
-        <nav class="flex flex-col text-lg font-bold">
-          <a
-            href="https://special.chocotravel.com/restrictions_2020?utm_source=chocotravel&amp;utm_medium=mobile-menu&amp;utm_campaign=restrictions_2020"
-            target="_blank"
-            class="flex items-center px-10 py-4 no-underline"
-          >
-            <span class="text-white">Информация об отмене рейсов</span>
           </a>
-          <a
-            href="/ru"
-            class="flex items-center px-10 py-4 no-underline bg-blue-400"
-          >
+        </div>
+        <div class="menu__main">
+          <a href="/ru" class="avia js-link-event selected">
             <img
-              src="https://www.chocotravel.com/media/v3/media/images/icons/main-menu/avia.svg"
+              src="https://www.chocotravel.com/media/v3/media/images/plane_active.svg"
               alt="Авиабилеты"
             />
-            <span class="text-white ml-5">Авиабилеты</span>
+            <span>Авиабилеты</span>
           </a>
-          <a
-            href="/ru/railways"
-            class="flex items-center px-10 py-5 no-underline"
-          >
+          <a href="/ru/railways" class="railways js-link-event">
             <img
-              src="https://www.chocotravel.com/media/v3/media/images/icons/main-menu/rw.svg"
+              src="https://www.chocotravel.com/media/v3/media/images/jd_ticket.png"
               alt="ЖД билеты"
             />
-            <span class="text-white ml-5">ЖД билеты</span>
+            <span>ЖД билеты</span>
           </a>
           <a
-            data-link="https://sp.booking.com/index.html?aid=860418"
-            class="nofollowlink flex items-center px-10 py-5 no-underline"
+            class="hotel js-link-event"
+            href="https://sp.booking.com/index.html?aid=860418"
+            target="_blank"
+            rel="nofollow"
           >
             <img
-              src="https://www.chocotravel.com/media/v3/media/images/icons/main-menu/hotel.svg"
+              src="https://www.chocotravel.com/media/v3/media/images/hotel.svg"
               alt="Гостиницы"
             />
-            <span class="text-white ml-5">Гостиницы</span>
+            <span>Гостиницы</span>
           </a>
-          <a href="/ru/visa" class="flex items-center px-10 py-5 no-underline">
+          <a href="/ru/rentalcars" class="rentalcars js-link-event">
             <img
-              src="https://www.chocotravel.com/media/v3/media/images/icons/main-menu/visa.svg"
+              src="https://www.chocotravel.com/media/v3/media/images/rentalcars.svg"
+              alt="Авто"
+            />
+            <span>Авто</span>
+          </a>
+          <a href="/ru/visa" class="visas js-link-event">
+            <img
+              src="https://www.chocotravel.com/media/v3/media/images/visa.svg"
               alt="Визы"
             />
-            <span class="text-white ml-5">Визы</span>
+            <span>Визы</span>
           </a>
-          <a
-            href="/ru/msb"
-            class="flex items-center px-10 py-5 no-underline js-link-event"
-            data-event="for_business"
-          >
-            <img
-              src="https://www.chocotravel.com/media/v3/media/images/icons/main-menu/b2b.svg"
-              alt="Корпоративным клиентам"
-            />
-            <span class="text-white ml-5">Для бизнеса</span>
+          <a href="/ru/msb" class="b2b js-link-event">
+            <div class="b2b-icon-wrapper">
+              <img
+                src="https://www.chocotravel.com/media/v3/media/images/msb.svg"
+                alt="Корпоративным клиентам"
+              />
+            </div>
+            <span>Корпоративным клиентам</span>
           </a>
-          <a
-            href="/ru/tours"
-            class="flex items-center px-10 py-5 no-underline js-link-event"
-            data-event="tours"
-          >
-            <img
-              src="https://www.chocotravel.com/media/v3/media/images/icons/main-menu/tours.svg"
-              alt="Туры"
-            />
-            <span class="text-white ml-5">Туры</span>
+          <a href="/ru/tours" class="tours js-link-event" data-event="tours">
+            <div class="tours-icon-wrapper">
+              <img
+                src="https://www.chocotravel.com/media/v3/media/images/tours.svg"
+                alt="Туры"
+              />
+            </div>
+            <span>Туры</span>
           </a>
-        </nav>
+        </div>
+        <div class="clear"></div>
       </div>
     </div>
     <!-- header -->
