@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="../../assets/main.css" />
     <link rel="stylesheet" href="./style.css" />
-
     <title>Дешевые авиабилеты онлайн</title>
   </head>
   <body>
@@ -156,55 +155,80 @@
     <!-- content -->
 
     <main class="container">
-      <div class="container-wrapper">
-        <section class="container-header__cabinet">
-          <h1>Личный кабинет</h1>
-          <span>+7 (708) 746-84-74</span>
-        </section>
-        <section class="container-header__info">
-          <div>
-            <img src="./" alt="amian" width="16px" height="16px" />
-            Заказы
-          </div>
-          <div>
-            <img src="./" alt="amian" width="16px" height="16px" />
-            Пассажиры
-          </div>
-        </section>
+      <section class="container-wrapper">
+        <h2>Лучшие цены на авиабилеты</h2>
+        <p>
+          Помощник путешественнику. Найди лучшую цену в любую часть мира! Цены,
+          обнаруженные за последние 3 дня.
+        </p>
+        <div class="container-wrapper__div">
+          <div class="container-wrapper__div2">
+            <span style="display: grid; font-size: 12px">
+              Город, страна или регион вылета
 
-        <section class="container-header__orders">
-          <div>
-            <select>
-              <option disabled selected>Все заказы</option>
-              <option value="">Обмененные заказы</option>
-              <option value="">Возвращенные заказы</option>
-              <option value="">Ожидают заказы</option>
-              <option value="">Отмененные заказы</option>
-            </select>
-          </div>
-          <div class="container-header__options">
-            <section>Авиабилеты</section>
-            <section>ЖД билеты</section>
-          </div>
-        </section>
-      </div>
+              <input type="text" placeholder="Ex: Almaty" />
+            </span>
 
-      <section class="container-header__allOrders">
-        <img
-          src="https://www.chocotravel.com/media/v3/media/images/choco-cabinet/orders/empty-orders.webp"
-          alt=""
-        />
-        <div>
-          <h4>У вас еще нет заказов</h4>
-          <span
-            >Воспользуйтесь поиском<br />
-            и отправляйтесь в путешествие</span
-          >
-          <br />
-          <button>Найти билеты</button>
+            <span style="display: grid; font-size: 12px">
+              Город, страна или регион прилета
+
+              <input type="text" placeholder="Ex: Europe" />
+            </span>
+
+            <span style="display: grid; font-size: 12px">
+              Сумма до
+
+              <input type="text" />
+            </span>
+          </div>
+          <div class="container-wrapper__div2">
+            <span style="display: grid; font-size: 12px">
+              Период вылета
+              <input type="text" placeholder="Ex: Almaty" />
+            </span>
+
+            <span style="display: grid; font-size: 12px">
+              Период пребывания
+
+              <input type="text" placeholder="Ex: Europe" />
+            </span>
+
+            <span style="display: grid; font-size: 12px">
+              в обе стороны
+              <select>
+                <option>В обе стороны</option>
+                <option>В одну стороны</option>
+              </select>
+            </span>
+          </div>
+
+          <div style="display: flex; justify-content: flex-end">
+            <button
+              style="
+                background-color: #5590c6;
+                border: none;
+                padding: 8px 100px;
+                border-radius: 8px;
+                color: white;
+              "
+            >
+              Поиск
+            </button>
+          </div>
+        </div>
+        <div class="orangeLine">
+          <span>Когда найден </span>
+          <span>Откуда </span>
+
+          <span>Куда </span>
+          <span>Цена </span>
+          <span>Цена за км. </span>
+          <span>Туда </span>
+          <span>Обратно </span>
         </div>
       </section>
     </main>
+
     <!-- content -->
 
     <!-- footer -->
