@@ -93,11 +93,13 @@ if (isset($_POST["submit"])) {
 		$req = "INSERT INTO bookings (flight_id, user_id) VALUES (?, ?)";
 		if ($stmt = mysqli_prepare($conn, $req)) {
 			mysqli_stmt_bind_param($stmt, "ss", $_POST['flight_id'], $_SESSION['user_id']);
-
+			mysqli_stmt_execute($stmt);
+			mysqli_stmt_close($stmt);
+		}
+		$req = "UPDATE users SET bonuses = bonuses + 5000 WHERE id = " . $_SESSION['user_id'];
+		if ($stmt = mysqli_prepare($conn, $req)) {
 			if (mysqli_stmt_execute($stmt)) {
 				header("location: ../MainPage/index.php");
-			} else {
-				echo "Oops! Something went wrong. Please try again later.";
 			}
 			mysqli_stmt_close($stmt);
 		}
